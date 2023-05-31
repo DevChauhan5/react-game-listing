@@ -5,7 +5,7 @@ function GenreList({ genreId }) {
   const [genreList, setGenreList] = useState([]);
   const [activeIndex, setActiveIndex] = useState(0);
   useEffect(() => {
-    getGenreList(4);
+    getGenreList();
   }, []);
   const getGenreList = () => {
     GlobalApi.getGenreList.then((resp) => {

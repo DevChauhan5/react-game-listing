@@ -10,7 +10,7 @@ export default function Home() {
   const [gameListByGenres, setGameListByGenres] = useState([]);
   useEffect(() => {
     getAllGamesList();
-    getGameListByGenresId();
+    getGameListByGenresId(4);
   }, []);
   const getAllGamesList = () => {
     GlobalApi.getAllGames.then((resp) => {
